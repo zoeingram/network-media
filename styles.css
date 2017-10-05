@@ -1,3 +1,24 @@
 * {
   font-family: monospace;
 }
+.hide {
+  visibility: hidden;
+}
+
+.derive-mouseover:hover {
+  background-image: url('http://www.hotelroomsearch.net/im/city/baku-azerbaijan-1.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.zema:hover {
+  background-image: url('https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/18216733_752380994887179_8739946060680555768_o.jpg?oh=b1bb2cc80a25f999f22973507295f937&oe=5A421895');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.gis:hover {
+  visibility: visible;
+}
