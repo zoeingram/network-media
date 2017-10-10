@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 * {
   font-family: 'Crimson Text';
-  background-color: #ffbad2;
 }
 
 .derive-mouseover:hover {

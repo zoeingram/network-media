@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>project one</title>
 
-    <link rel="stylesheet" href="../styles/simple-grid.min.css"/>
-    <link rel="stylesheet" href="../styles/global.css"/>
-  </head>
-  <body class="row">
-  <div class="col-6">
-    <h3>website inspiration</h3>
-    <ul>
-      <li>
-        <a href="http://delaneyclark.com/">Delaney Clark</a>
-        <br/> <img src="images/one/one.png" height="300px"/>
-        <br/> <img src="images/one/two.png" height="300px"/>
-        <p>I like the use of (almost) unstyled html, and pure text to just show what's neccessary for people looking at her work/writing.</p>
-      </li>
+    <link rel="stylesheet" href="../styles/simple-grid.min.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+</head>
 
-      <li><a href="http://mediadesignpractices.net/research/ioet/">The Internet of Enlightened Things</a>
-        <br/> <img src="images/one/six.png" height="300px"/>
-        <p>I like the use of link styles and color to carry the reader through a big chunk of text, and the illustrations make it playful.</p>
-      </li>
-      <li><a href="http://nicciyin.com/">Nicci Yin</a>
-        <br/> <img src="images/one/five.png" height="300px"/>
-        <p>Follows a lot of the concepts in the Frank Chimero essay, use of multiple kinds of text and color.</p>
-      </li>
-
-      <li>
-
-      <a href="http://www.ivypark.com">Ivy Park</a>
-      <br/> <img src="images/one/three.png" height="300px"/>
-      <p>I love the use of music and forced user interaction to navigate the site.</p>
-    </li>
-
-    </ul>
+<body class="row">
+  <div class="col-12 center">
+    <a href="http://users.dma.ucla.edu/~zoeaingram/">home</a>
   </div>
-  <div class="col-6">
-    <h3>content for the project</h3>
-    <p>Use of personal content to create a portfolio, rather than an arts website, which I've built <a href="http://zoeaingram.com">here</a> </p><br/>
-    <img src="images/one/z1.PNG" width="200px"/>
-    <img src="images/one/z2.PNG" width="200px"/>
-    <img src="images/one/z3.PNG" width="200px"/>
-    <img src="images/one/z-one.png" width="400px"/>
-    <img src="images/one/z-two.png" width="400px"/>
-    <img src="images/one/z-three.png" width="400px"/>
-    <img src="images/one/z-four.png" width="400px"/>
+  <div class="col-12 center">
 
-
-
-
-
+    <button id="one">Part One</button>
+    <button id="two">Part Two</button>
   </div>
 
+    <div id="part-one" style="display: none">
+        <div class="col-6">
+          <h1>PART ONE</h1>
+            <h3>website inspiration</h3>
+            <ul>
+                <li>
+                    <a href="http://delaneyclark.com/">Delaney Clark</a>
+                    <br/> <img src="images/one/one.png" height="300px" />
+                    <br/> <img src="images/one/two.png" height="300px" />
+                    <p>I like the use of (almost) unstyled html, and pure text to just show what's neccessary for people looking at her work/writing.</p>
+                </li>
+
+                <li><a href="http://mediadesignpractices.net/research/ioet/">The Internet of Enlightened Things</a>
+                    <br/> <img src="images/one/six.png" height="300px" />
+                    <p>I like the use of link styles and color to carry the reader through a big chunk of text, and the illustrations make it playful.</p>
+                </li>
+                <li><a href="http://nicciyin.com/">Nicci Yin</a>
+                    <br/> <img src="images/one/five.png" height="300px" />
+                    <p>Follows a lot of the concepts in the Frank Chimero essay, use of multiple kinds of text and color.</p>
+                </li>
+
+                <li>
+
+                    <a href="http://www.ivypark.com">Ivy Park</a>
+                    <br/> <img src="images/one/three.png" height="300px" />
+                    <p>I love the use of music and forced user interaction to navigate the site.</p>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-6">
+            <h3>content for the project</h3>
+            <p>Use of personal content to create a portfolio, rather than an arts website, which I've built <a href="http://zoeaingram.com">here</a> </p><br/>
+            <img src="images/one/z1.PNG" width="200px" />
+            <img src="images/one/z2.PNG" width="200px" />
+            <img src="images/one/z3.PNG" width="200px" />
+            <img src="images/one/z-one.png" width="400px" />
+            <img src="images/one/z-two.png" width="400px" />
+            <img src="images/one/z-three.png" width="400px" />
+            <img src="images/one/z-four.png" width="400px" />
+
+        </div>
+    </div>
+    <div id="part-two" style="display:none">
+        <div class="col-6">
+          <h1>PART TWO</h1>
+
+            <p>
+                I’d like to create a sort of data visualization that creates a portrait of my internet usage. As someone who spends many hours a day online, browsing, reading, sharing, posting and following various forms of content, I’m creating huge amounts of metadata.
+                Until hearing from Surya Mattu, I had never thought about how revealing my personal metadata can be to almost any user, not just surveillance experts. Even just the response data present in Facebook likes, Twitter retweets, and Instagram
+                posts is enough to paint an accurate picture of how I spend my time, and I’d like to illustrate how available our personal data is. I’m writing a Chrome extension that when activated, picks up all the response data from my internet activity.
+                I plan to comb through and use a library like d3.js to visualize the different kinds of metadata my activity provides, like location, time, and content. From this experiment I hope to show that there’s a lot more information that we provide
+                every time we hit “like” than one might think.
+
+            </p>
+        </div>
+    </div>
+    <script>
+    var one = document.getElementById('one');
+
+    one.onclick = function() {
+        var partOne = document.getElementById('part-one');
+        if (partOne.style.display !== 'none') {
+            partOne.style.display = 'none';
+        }
+        else {
+            partOne.style.display = 'block';
+        }
+    };
+
+    var two = document.getElementById('two');
+    two.onclick = function() {
+      var partTwo = document.getElementById('part-two');
+      if (partTwo.style.display !== 'none') {
+        partTwo.style.display = 'none';
+      } else {
+        partTwo.style.display = 'block';
+      }
+    };
+
+    </script>
 
 </body>
+
 </html>
