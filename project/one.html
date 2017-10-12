@@ -18,6 +18,8 @@
 
     <button id="one">Part One</button>
     <button id="two">Part Two</button>
+    <button id="three">Part Three</button>
+
   </div>
 
     <div id="part-one" style="display: none">
@@ -64,18 +66,24 @@
         </div>
     </div>
     <div id="part-two" style="display:none">
-        <div class="col-6">
+        <div class="col-12">
           <h1>PART TWO</h1>
-
             <p>
                 I’d like to create a sort of data visualization that creates a portrait of my internet usage. As someone who spends many hours a day online, browsing, reading, sharing, posting and following various forms of content, I’m creating huge amounts of metadata.
                 Until hearing from Surya Mattu, I had never thought about how revealing my personal metadata can be to almost any user, not just surveillance experts. Even just the response data present in Facebook likes, Twitter retweets, and Instagram
                 posts is enough to paint an accurate picture of how I spend my time, and I’d like to illustrate how available our personal data is. I’m writing a Chrome extension that when activated, picks up all the response data from my internet activity.
                 I plan to comb through and use a library like d3.js to visualize the different kinds of metadata my activity provides, like location, time, and content. From this experiment I hope to show that there’s a lot more information that we provide
                 every time we hit “like” than one might think.
-
             </p>
+            <img src="images/one/site-map.png" width="800px"/>
         </div>
+    </div>
+
+    <div id="part-three" style="display:none">
+      <div class="col-12">
+        <h1>PART THREE</h1>
+      </div>
+
     </div>
     <script>
     var one = document.getElementById('one');
@@ -93,6 +101,16 @@
     var two = document.getElementById('two');
     two.onclick = function() {
       var partTwo = document.getElementById('part-two');
+      if (partTwo.style.display !== 'none') {
+        partTwo.style.display = 'none';
+      } else {
+        partTwo.style.display = 'block';
+      }
+    };
+
+    var three = document.getElementById('three');
+    three.onclick = function() {
+      var partTwo = document.getElementById('part-three');
       if (partTwo.style.display !== 'none') {
         partTwo.style.display = 'none';
       } else {
