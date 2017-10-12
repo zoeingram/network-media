@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 * {
   font-family: 'Crimson Text';
+  text-decoration: none;
+  list-style: none;
 }
 
+a:hover {
+  color: red;  
+}
 .derive-mouseover:hover {
   background-image: url('http://www.hotelroomsearch.net/im/city/baku-azerbaijan-1.jpg');
   height: 200px;
