@@ -6,7 +6,7 @@
 }
 
 a:hover {
-  color: red;  
+  color: magenta;  
 }
 .derive-mouseover:hover {
   background-image: url('http://www.hotelroomsearch.net/im/city/baku-azerbaijan-1.jpg');
